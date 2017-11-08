@@ -8,4 +8,4 @@ CREATE  table `users`(
     `password` varchar(32) not null
     ) ENGINE = InnoDB DEFAULT CHARSET = utf8 ;
 
-insert into `users`(`username`,`password`) values ('admin', 'flag{1ts_N0t_0v3r!}');
+insert into SQLlevel2.users(`username`,`password`) values ('admin', 'flag{1ts_N0t_0v3r!}');

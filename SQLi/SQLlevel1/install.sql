@@ -32,5 +32,5 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`username`, `password`) VALUES
+INSERT INTO SQLlevel1.user (`username`, `password`) VALUES
 ('admin', '8b7035a74515c8ae027bc6830a94c6da');
