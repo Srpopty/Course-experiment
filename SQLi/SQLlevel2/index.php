@@ -151,7 +151,7 @@
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input type="text" id="uname" name="uname" class="form-control" placeholder="用户名">
+							<input type="text" id="username" name="username" class="form-control" placeholder="用户名">
 						</div>
 					</div>
 				</div>
@@ -159,7 +159,7 @@
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="passwd" name="passwd" class="form-control" placeholder="密码">
+							<input type="password" id="password" name="password" class="form-control" placeholder="密码">
 						</div>
 					</div>
 				</div>

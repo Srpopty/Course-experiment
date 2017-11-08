@@ -40,21 +40,20 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 	if (empty($_POST['user']) || empty($_POST['pass'])) {
 		echo "<h1>Please type Username - Password</h1>";exit();
 	}
-	$connect = mysql_connect('localhost','tester','password');
-	$selectdb = mysql_select_db('SQLlevel1');
+	if(!$connect = new mysqli('localhost','tester','tester', 'SQLlevel1'))die('Connect eror!');
 
 	$user = $_POST['user']; 
 	$pass = addslashes($_POST['pass']);
 
 	$sqlcheckuser = "SELECT * FROM user WHERE username = '".$user."' LIMIT 0,1";
 
-	$checkuser = mysql_query($sqlcheckuser) or die (mysql_error().'<br>Query Error: '.$sqlcheckuser);
+	$checkuser = $connect->query($sqlcheckuser) or die (mysqli_error().'<br>Query Error: '.$sqlcheckuser);
 
 	$sqluserpass = "SELECT * FROM user WHERE username = '".$user."' AND password = '".$pass."' LIMIT 0,1";
-	$query = mysql_query($sqluserpass)or die (mysql_error());
+	$query = $connect->query($sqluserpass)or die (mysqli_error());
 
-	$userarray = mysql_fetch_array($checkuser);
-	$array = mysql_fetch_array($query);
+	$userarray = $checkuser->fetch_array();
+	$array = $query->fetch_array();
 
 	echo "<h1>";
 

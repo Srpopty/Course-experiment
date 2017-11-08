@@ -1,5 +1,5 @@
 
-CREATE DATABASE `SQLlevel2` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `SQLlevel2` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 use `SQLlevel2`;
 
 CREATE  table `users`(
