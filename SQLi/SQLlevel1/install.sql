@@ -7,6 +7,10 @@
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
+CREATE DATABASE IF NOT EXISTS `SQLlevel1`;
+
+use SQLlevel1;
+
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 --

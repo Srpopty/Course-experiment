@@ -8,8 +8,8 @@
 <?php
 
 $DB_HOST = 'localhost';
-$DB_USER = '';
-$DB_PASS = '';
+$DB_USER = 'tester';
+$DB_PASS = 'password';
 $DB_NAME = 'SQLitest';
 
 if (!$link=mysqli_connect($DB_HOST, $DB_USER, $DB_PASS)) die('Connection error');

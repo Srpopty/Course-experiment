@@ -40,8 +40,8 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 	if (empty($_POST['user']) || empty($_POST['pass'])) {
 		echo "<h1>Please type Username - Password</h1>";exit();
 	}
-	$connect = mysql_connect('localhost','root','');
-	$selectdb = mysql_select_db('test');
+	$connect = mysql_connect('localhost','tester','password');
+	$selectdb = mysql_select_db('SQLlevel1');
 
 	$user = $_POST['user']; 
 	$pass = addslashes($_POST['pass']);
