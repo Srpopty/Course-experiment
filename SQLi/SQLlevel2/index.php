@@ -1,10 +1,11 @@
 ﻿<?php
 	header("Content-Type:text/html;charset=utf-8");
-	error_reporting(E_ERROR);
+	#error_reporting(E_ERROR);
 	define ('PATH_WEB', dirname(__FILE__).'/');
 	require_once(dirname(__FILE__).'/include/conf.php');
 	require_once(dirname(__FILE__).'/include/fiter.php');
-	if($_SESSION['flag'] === 1){
+	#var_dump($_SESSION);
+	if(isset($_SESSION['flag']) && $_SESSION['flag'] === 1){
 		header("location:./admin/");exit;
 	}
 ?>
@@ -151,7 +152,7 @@
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input type="text" id="username" name="username" class="form-control" placeholder="用户名">
+							<input type="text" id="uname" name="uname" class="form-control" placeholder="用户名">
 						</div>
 					</div>
 				</div>
@@ -159,7 +160,7 @@
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="password" name="password" class="form-control" placeholder="密码">
+							<input type="password" id="passwd" name="passwd" class="form-control" placeholder="密码">
 						</div>
 					</div>
 				</div>

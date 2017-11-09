@@ -153,10 +153,14 @@
 				header("Content-Type:text/html;charset=utf-8");
 				$o = new fiter();
 				$a = $o->ord_clean($_POST['ord']);
+
 				if($a){
-					if(exec($a))echo '命令执行成功！！';
-					else echo "命令执行出错！！";
-				}else echo "想干啥呢~_~!!"
+					if( exec( $a ) ) 
+						echo '命令执行成功！！';
+					else 
+						echo "命令执行出错！！";
+				}else 
+					echo "想干啥呢~_~!!"
 				?>
 				<p>
 			</div>

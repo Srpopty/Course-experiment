@@ -1,4 +1,4 @@
-﻿<title>Nickname</title>
+<title>Nickname</title>
 <style type="text/css">
 body,td,th {
 	color: #FFCC00;
@@ -24,8 +24,8 @@ if(!isset($_COOKIE['Hint']))
 
 error_reporting(0);
 
-$fp = fopen('nickname.txt','r');
-$fr = fread($fp,filesize('nickname.txt'));
+$fp = fopen('_n1ckn4m3.txt','r');
+$fr = fread($fp,filesize('_n1ckn4m3.txt'));
 $fr = strip_tags($fr);
 fclose($fp);
 
